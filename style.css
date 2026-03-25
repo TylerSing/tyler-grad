@@ -296,3 +296,16 @@ footer { text-align: center; padding: 4rem; color: #636e72; font-size: 0.9rem; }
     border-bottom: 2px solid #E39774;
     transform: translateY(-2px);
 }
+
+/* Mobile Devices (Phones) */
+@media (max-width: 480px) {
+    .personal-photo-frame {
+        width: 180px !important;
+        height: 180px !important;
+        border-width: 4px !important; /* Thinner border looks better on small screens */
+    }
+    
+    header h1 {
+        font-size: 2.5rem !important; /* Shrink your name slightly too */
+    }
+}
