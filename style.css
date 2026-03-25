@@ -411,3 +411,13 @@ header h1 {
 }
 
 .timeline-time { font-weight: 700; color: var(--tangerine); min-width: 90px; }
+
+
+/* Mobile Devices (Phones) */
+@media (max-width: 480px) {
+    .headshot {
+        width: 180px !important;
+        height: 180px !important;
+        border-width: 4px !important; /* Thinner border looks better on small screens */
+    }
+}
