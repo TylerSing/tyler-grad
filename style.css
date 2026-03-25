@@ -44,10 +44,37 @@ header {
     text-align: center;
 }
 
+/* This only touches the header with that specific class */
+.itinerary-header {
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.itinerary-header h5 {
+    margin: 0 !important;
+    font-size: 3rem;
+    color: var(--tangerine);
+}
+
+.itinerary-header p {
+    margin: 0 !important;
+    color: var(--pacific-blue);
+}
+
 header h1 {
     font-family: 'Georgia', serif; /* Or 'Playfair Display' if you use Google Fonts */
     font-size: 4rem !important;
     color: var(--white);
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+header h5 {
+    font-family: 'Georgia', serif; /* Or 'Playfair Display' if you use Google Fonts */
+    font-size: 3rem !important;
+    color: var(--tangerine);
     letter-spacing: 2px;
     margin-bottom: 0.5rem;
     text-transform: uppercase;
@@ -117,6 +144,7 @@ header p.graduation-year{
 }
 
 .info-container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+.itinerary-container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
 
 /* Force the Party Card to Pop */
 div.detail-card.party-banner {
@@ -197,16 +225,6 @@ div.detail-card.party-banner {
 
 .timeline-time { font-weight: 700; color: var(--tangerine); min-width: 90px; }
 
-/* --- FAQ PAGE: Questions --- */
-.faq-item {
-    background: var(--white);
-    padding: 1.5rem;
-    border-radius: 12px;
-    margin-bottom: 1.2rem;
-    border-left: 6px solid var(--blue-slate);
-    box-shadow: var(--shadow);
-}
-
 /* --- Buttons & Links --- */
 /* Specific sizing for the RSVP button */
 .btn-rsvp {
@@ -229,6 +247,33 @@ div.detail-card.party-banner {
 
 /* Add a "Lift" effect on hover */
 .btn-rsvp:hover {
+    background-color: white;
+    color: var(--tangerine) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(227, 151, 116, 0.3);
+}
+
+/* Specific sizing for the Contact button */
+.btn-contact {
+    display: inline-block;
+    padding: 0.8rem 1.5rem !important; /* Top/Bottom and Left/Right */
+    font-size: 1rem !important;    /* Makes the text pop */
+    font-weight: 700 !important;      /* Extra bold */
+    text-transform: uppercase;        /* "Engineering" style clean look */
+    letter-spacing: 1px;
+    border-radius: 8px;               /* Slightly rounded corners */
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    
+    /* Using your Tangerine Dream for the RSVP button */
+    background-color: var(--tangerine);
+    color: white !important;
+    border: 2px solid var(--tangerine);
+}
+
+/* Add a "Lift" effect on hover */
+.btn-contact:hover {
     background-color: white;
     color: var(--tangerine) !important;
     transform: translateY(-3px);
