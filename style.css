@@ -112,10 +112,6 @@ header h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-
-.banner {
     margin-bottom: 0 !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -148,6 +144,57 @@ header h1 {
     font-size: 1.5rem;
 }
 
+@media (max-width: 480px) {
+    .banner {
+        background-color: var(--blue-slate);
+        color: var(--white);
+        padding: 5rem 2rem;
+        text-align: center;
+        border-bottom: 6px solid var(--tangerine);
+        min-height: 12rem; 
+        padding: 10rem 2rem; 
+        background-size: cover;
+        background-position: center 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 0 !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .banner p {
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: var(--white);
+        font-size: 0.7rem;
+        margin-bottom: 0;
+    }
+
+    .banner h1 {
+        font-family: 'Georgia', serif; /* Or 'Playfair Display' if you use Google Fonts */
+        font-size: 3rem !important;
+        color: var(--white);
+        letter-spacing: 2px;
+        margin-bottom: 0;
+        text-transform: uppercase;
+    }
+
+    .banner h2 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: var(--white);
+        font-size: 0.8rem;
+        margin-bottom: 0;
+    }  
+}
+
 
 /* --- Invitation Section --- */
 .invitation {
@@ -172,12 +219,28 @@ header h1 {
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.headshot img{
+.headshot img { 
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: 50% -30%;
     transform: scale(2) translate(-20px, 0px);
+}
+
+@media (max-width: 480px) {
+    .headshot {
+        width: 180px !important;
+        height: 180px !important;
+        border-width: 4px !important; /* Thinner border looks better on small screens */
+    }
+
+    .headshot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% -30%;
+    transform: scale(2) translate(-8px, 0px);
+    }
 }
 
 .invitation h2 {
@@ -411,13 +474,3 @@ header h1 {
 }
 
 .timeline-time { font-weight: 700; color: var(--tangerine); min-width: 90px; }
-
-
-/* Mobile Devices (Phones) */
-@media (max-width: 480px) {
-    .headshot {
-        width: 180px !important;
-        height: 180px !important;
-        border-width: 4px !important; /* Thinner border looks better on small screens */
-    }
-}
