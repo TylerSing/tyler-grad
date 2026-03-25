@@ -87,8 +87,8 @@ header p.graduation-year{
 }
 
 .personal-photo-frame {
-    width: 280px;
-    height: 280px;
+    width: 60vw;
+    height: 60vw;
     margin: 0 auto 2rem auto;
     border-radius: 50%; /* Circular frame */
     border: 6px solid var(--pacific-blue); /* #5C9EAD */
