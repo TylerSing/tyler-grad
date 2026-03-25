@@ -8,32 +8,71 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="hero">
-        <p>Walla Walla University</p>
-        <h1>Tyler Sing</h1>
-        <p>B.S.E. in Mechanical Engineering</p>
+    <header class="photo-hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('photos/sunset.jpg');">
+        <div class="header-overlay">
+            <p>Walla Walla University</p>
+            <h1>Tyler Sing</h1>
+            <h2 class="degree">Bachelor of Science in Engineering</h2>
+            <p>Class of 2026</p>
+        </div>
     </header>
 
     <main class="info-container">
-        <div style="text-align: center; margin-bottom: 3rem;">
-            <h2>Commencement Invitation</h2>
-            <p>Join us as we celebrate this milestone at Centennial Green.</p>
-            <a href="YOUR_GOOGLE_FORM_URL" target="_blank" class="btn-rsvp" style="margin-top: 20px;">RSVP via Google Form</a>
+        <div class="invitation-container" style="text-align: center; max-width: 600px; margin: 0 auto 5rem auto; padding: 0 1.5rem;">
+            
+            <div class="personal-photo-frame" style="display: inline-block; width: 400px; height: 400px; border-radius: 50%; border: 6px solid var(--wwu-green); overflow: hidden; box-shadow: var(--shadow); margin-bottom: 2.5rem; background-image: url('photos/headshot.png'); background-size: cover; background-position: center 20%; /* Adjusted for face alignment */">
+            </div>
+
+            <div class="centered-invitation-text">
+                <h2 style="color: var(--wwu-green); font-size: 2.4rem; font-weight: 700; margin-bottom: 1.2rem;">You're Invited!</h2>
+                <p style="font-size: 1.1rem; color: #555; line-height: 1.7; margin-bottom: 2.5rem;">Please join me and my family as we celebrate this milestone in my life. Thank you for all of your support along the way!</p>
+                
+                <div style="display: flex; justify-content: center;">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf-XNSzzdi9Q3JXaRH5UMClVHbPIYo3iOfGfonDqsUiySdWdw/viewform?usp=preview" target="_blank" class="btn-rsvp">RSVP via Google Form</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail-card party-banner">
+            <div class="icon">🥳</div>
+            <div class="party-details">
+                <h3 style="color: var(--blue-slate); margin-top: 0; font-size: 2rem;">Celebratory Open House</h3>
+                <p style="margin-bottom: 1.5rem; max-width: 700px; margin-left: auto; margin-right: auto;">Stop by to congratulate Tyler for his accomplishments (we have snacks too). Please RSVP with the link above.</p>
+                <div style="display: flex; gap: 2rem; font-weight: 700; color: var(--pacific-blue); justify-content: center; flex-wrap: wrap;">
+                    <span>📍 <a href="https://www.google.com/maps/search/?api=1&query=224+NW+Schnabel+Lane+College+Place+WA" target="_blank" class="btn-secondary">224 NW Schnabel Lane</a></span>
+                    <span>🕒 Saturday 3-5 PM</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail-card party-banner">
+            <div class="icon">🎓</div>
+            <div class="party-details">
+                <h3 style="color: var(--blue-slate); margin-top: 0; font-size: 2rem;">Commencement Ceremony</h3>
+                <p style="margin-bottom: 1.5rem; max-width: 700px; margin-left: auto; margin-right: auto;">The actual thing. Hopefully you know what this one is.</p>
+                <div style="display: flex; gap: 2rem; font-weight: 700; color: var(--pacific-blue); justify-content: center; flex-wrap: wrap;">
+                    <span>📍 <a href="https://maps.app.goo.gl/xNmxNzuYu9B9smxAA" target="_blank" class="btn-secondary">Centennial Green</a></span>
+                    <span>🕒 Sunday 8:30 AM</span>
+                </div>
+            </div>
         </div>
 
         <div class="details-grid">
             <div class="detail-card">
-                <div class="icon">⏰</div>
-                <h3>The Schedule</h3>
-                <p>View the full itinerary and ceremony locations.</p>
-                <a href="schedule.html" class="btn-secondary">View Details →</a>
+                <div class="icon">
+                    <img src="icons/house.svg" width="40" height="40">
+                </div>
+                <h3>Lodging</h3>
+                <p>Both hotels and RV parking spaces are available. The La Quinta and Holiday Inn Express are my recommendation</p>
+                <a href="https://business.wwvchamber.com/list/ql/lodging-travel-15?c=109&q=&st=1" class="btn-secondary">Hotel Options →</a>
+                <a href="https://wwuform.formstack.com/forms/rv_space_rental" class="btn-secondary">RV Space Rental →</a>
             </div>
 
             <div class="detail-card">
-                <div class="icon">📞</div>
-                <h3>Contact Us</h3>
-                <p>Need help with directions? Reach out to Tyler or his Mom.</p>
-                <a href="contacts.html" class="btn-secondary">View Contacts →</a>
+                <div class="icon">🎓</div>
+                <h3>Weekend Itinerary</h3>
+                <p>View the full itinerary and ceremony locations.</p>
+                <a href="schedule.html" class="btn-secondary">View Details →</a>
             </div>
 
             <div class="detail-card">
@@ -44,11 +83,37 @@
             </div>
 
             <div class="detail-card">
-                <div class="icon">❓</div>
-                <h3>Common Questions</h3>
-                <p>Details on dress code, travel, and more.</p>
-                <a href="faq.html" class="btn-secondary">Read FAQ →</a>
+                <div class="icon">
+                    <img src="icons/rain.svg" width="40" height="40">
+                </div>
+                <h3>Weather</h3>
+                <p>Unfortunately, no matter the weather, commencement will happen outside on Centennial Green. Make sure to bring a jacket just in case.</p>
+                <a href="https://weather.com/weather/hourbyhour/l/4f5ed2e91936d17a579059fb443ac13ba6812a4ce660780422a62503f3a103cb" class="btn-secondary">View Forecast →</a>
             </div>
+
+            <div class="detail-card">
+                <div class="icon">
+                    <img src="icons/youtube.svg" width="40" height="40">
+                </div>
+                <h3>Livestream</h3>
+                <p>If you are unable to make it to the events, they will be available on YouTube. WWU will stream Consecration and Commencement. Uchurch will stream Baccalaureate.</p>
+                <a href="https://www.youtube.com/@WallaWallaUniversity/featured" class="btn-secondary">WWU Youtube →</a>
+                <a href="https://www.youtube.com/@WWUChurch" class="btn-secondary">UChurch Youtube →</a>
+            </div>
+
+            <div class="detail-card">
+                <div class="icon">
+                    <img src="icons/car.svg" width="40" height="40">
+                </div>
+                <h3>Parking</h3>
+                <p>Parking is available all over campus. See the campus map for available parking lots. The lot by Sittner hall is one of the easiest for all weekend events.</p>
+                <a href="https://maps.app.goo.gl/mPSVx5HLzYJDGmB4A" class="btn-secondary">Sittner Lot →</a>
+            </div>
+        </div>
+    
+        <div style="text-align: center; margin-top: 3rem;">
+            <p>Still have questions?</p>
+            <a href="contacts.html" class="btn-rsvp">Contact Me</a>
         </div>
     </main>
 
