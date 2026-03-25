@@ -4,82 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-    <title>Weekend Itinerary | Tyler Sing</title>
+    <title>Schedule | Tyler Sing</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="sub-nav"><a href="index.html">← Back to Home</a></nav>
+    <nav class="sub-nav"><a href="index.html">← Back to Invitation</a></nav>
 
     <main class="info-container">
-        <header class="section-header">
-            <h2>Weekend Itinerary</h2>
-            <p>College Place, WA | June 12–14, 2026</p>
+        <header style="text-align: center; margin-bottom: 2rem;">
+            <h1>Weekend Itinerary</h1>
+            <p>Walla Walla University | Class of 2026</p>
         </header>
 
-        <div class="timeline">
-            <div class="timeline-day">Friday, June 12</div>
-            <div class="timeline-item">
-                <span class="time">6:00 PM</span>
-                <div class="event-desc">
-                    <h4>Engineering Senior Recognition</h4>
-                    <p><a href="https://www.google.com/maps/search/?api=1&query=Walla+Walla+University+Church" target="_blank" class="map-text-link">Fellowship Hall (University Church)</a></p>
-                    <p><em>Recognition for graduates and a chance to meet engineering faculty.</em></p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <span class="time">8:00 PM</span>
-                <div class="event-desc">
-                    <h4>Consecration Service</h4>
-                    <p><a href="https://www.google.com/maps/search/?api=1&query=Walla+Walla+University+Church" target="_blank" class="map-text-link">University Church Sanctuary</a></p>
-                </div>
-            </div>
-
-            <div class="timeline-day">Saturday, June 13</div>
-            <div class="timeline-item">
-                <span class="time">11:45 AM</span>
-                <div class="event-desc">
-                    <h4>Baccalaureate Service</h4>
-                    <p><a href="https://www.google.com/maps/search/?api=1&query=Walla+Walla+University+Church" target="_blank" class="map-text-link">University Church Sanctuary</a></p>
-                </div>
-            </div>
-            <div class="timeline-item party-item">
-                <span class="time">2:00 PM</span>
-                <div class="event-desc">
-                    <h4>Graduation Party 🥳</h4>
-                    <p><a href="https://www.google.com/maps/search/?api=1&query=224+NW+Schnabel+Lane+College+Place+WA" target="_blank" class="map-text-link">224 NW Schnabel Lane</a></p>
-                    <p>Stop by for food and celebration!</p>
-                </div>
-            </div>
-
-            <div class="timeline-day">Sunday, June 14</div>
-            <div class="timeline-item">
-                <span class="time">9:00 AM</span>
-                <div class="event-desc">
-                    <h4>Commencement Ceremony</h4>
-                    <p><a href="https://www.google.com/maps/search/?api=1&query=Centennial+Green+Walla+Walla+University" target="_blank" class="map-text-link">Centennial Green</a></p>
-                </div>
+        <div class="timeline-day-header">Friday, June 12</div>
+        
+        <div class="timeline-card">
+            <div class="timeline-time">4:00 PM</div>
+            <div class="timeline-content">
+                <h4>Engineering Recognition Service</h4>
+                <p>Chan Shun Pavilion | Alumni Auditorium</p>
+                <p style="font-size: 0.85rem; color: #666; margin-top: 5px;">Join us for the presentation of the engineering pins and awards.</p>
             </div>
         </div>
 
-        <section class="parking-card">
-            <h4>🗺️ Parking & Navigation Guide</h4>
-            <ul>
-                <li><strong>For Church Services (#29):</strong> Fellowship Hall is in the basement. Parking is available in the <strong>Sittner Lot (#34)</strong> or along SW Bade Ave.</li>
-                <li><strong>For Ceremony (#8):</strong> Accessible Parking (P) is located near the Administration Building and Centennial Green.</li>
-            </ul>
-        </section>
-
-        <section class="location-widget">
-            <div class="section-header"><h2>Interactive Map</h2></div>
-            <div class="map-responsive">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2771.693489381653!2d-118.39343722359416!3d46.0472499710892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54a23075677864f1%3A0x6b4be93f5b72e987!2sWalla+Walla+University!5e0!3m2!1sen!2sus!4v1711252500000!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="timeline-card">
+            <div class="timeline-time">8:00 PM</div>
+            <div class="timeline-content">
+                <h4>Consecration Service</h4>
+                <p>University Church Sanctuary</p>
             </div>
-        </section>
+        </div>
 
-        <div class="contact-cta">
-            <p>Questions? Need help with directions?</p>
-            <a href="contacts.html">View Contact Info →</a>
+        <div class="timeline-day-header">Saturday, June 13</div>
+
+        <div class="timeline-card">
+            <div class="timeline-time">11:45 AM</div>
+            <div class="timeline-content">
+                <h4>Baccalaureate Service</h4>
+                <p>University Church Sanctuary</p>
+            </div>
+        </div>
+
+        <div class="timeline-card" style="border-left-color: var(--eng-orange);">
+            <div class="timeline-time">2:00 PM</div>
+            <div class="timeline-content">
+                <h4>Graduation Party 🥂</h4>
+                <p>224 NW Schnabel Lane, College Place</p>
+                <p style="font-size: 0.85rem; color: #666; margin-top: 5px;">Food, drinks, and celebration at our home server headquarters.</p>
+            </div>
+        </div>
+
+        <div class="timeline-day-header">Sunday, June 14</div>
+
+        <div class="timeline-card">
+            <div class="timeline-time">9:00 AM</div>
+            <div class="timeline-content">
+                <h4>Commencement Ceremony</h4>
+                <p>Centennial Green</p>
+                <p style="font-size: 0.85rem; color: #666; margin-top: 5px;">The final conferral of degrees. Outdoors on the grass.</p>
+            </div>
         </div>
     </main>
+
+    <footer>© 2026 Tyler Sing | B.S.E. Mechanical Engineering</footer>
 </body>
 </html>
